@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>chess finder</title>
+ <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <header>
+  <h1 class="heading
+  ">chess game</h1>
+
+ </header>
+ <div class="chess-board-div">
+
+ <div class="main">
+  <div class="chessboard">
+   <!-- 1st line-->
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <!-- 2nd line -->
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <!-- 3th line -->
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <!-- 4st line -->
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <!-- 5th line -->
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <!-- 6th line-->
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <!-- 7th line-->
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <!-- 8th line-->
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+   <div class="black"></div>
+   <div class="white"></div>
+  </div>
+
+ </div>
+ </div>
+ <div class="chess-function-div">
+  <div class="instruction-div">
+    <h1>movement Finder</h1>
+    <h2>Instruction to Follow:</h2>
+    <ul>
+    
+     <li>Choose the initial position of the coin</li>
+     <li>Choose the Final position you want to move </li>
+    <li>Choose the coin to Predict</li>
+    <li>Answer will be displayed :)</li>
+    </ul>
+  </div>
+ <div class="coin">
+  <h3>CHOOSE THE COIN</h3>
+  <input type="radio" name="KING" id="KING" class="common" onchange="king()">
+  <label for="KING">KING</label><br>
+  <input type="radio" name="KING" id="QUEEN"  class="common" onchange="queen()">
+  <label for="QUEEN">QUEEN</label><br>
+  <input type="radio" name="KING" id="KNIGHTS"  class="common" onchange="knights()">
+  <label for="KNIGHTS">KNIGHTS</label><br>
+  <input type="radio" name="KING" id="BISHOP"  class="common" onchange="bishop()">
+  <label for="BISHOP">BISHOP</label><br>
+  <input type="radio" name="KING" id="ROOK"  class="common" onchange="rook()">
+  <label for="ROOK">ROOK</label><br>
+  <input type="radio" name="KING" id="PAWN"  class="common" onchange="pawn()">
+  <label for="PAWN">PAWN</label><br>
+
+ </div>
+ <div class="input-output">
+   <div  class="initial">
+    <h3>select the initial portion of the coin</h3>
+    <select name="initial-alp" id="initialalp"  class="select">
+      <option value="_">(:___:)</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="H">H</option>
+    
+    </select>
+    
+    <select name="initial-num" id="initialnum" class="select">
+      <option value="_">(:___:)</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    
+    </select>
+
+   </div>
+    
+
+<div class="final">
+<h3>select the final portion of the Coin</h3>
+<select name="final-alp" id="finalalp" class="select">
+  <option value="_">(:___:)</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+  <option value="F">F</option>
+  <option value="G">G</option>
+  <option value="H">H</option>
+
+</select>
+
+<select name="final-num" id="finalnum"  class="select">
+  <option value="_">(:___:)</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+
+</select>
+</div>
+
+    
+ </div>
+
+ </div>
+
+<div >
+  <h1 class="resultdiv" id="resultdiv"></h1>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
